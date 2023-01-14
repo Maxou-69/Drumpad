@@ -1,0 +1,10 @@
+.container-lettres {
+    display: flex;
+    justify-content: center;
+}
+
+.letters {
+    width: 3vh;
+    padding: 1vh;
+    border: 1vh solid #eee;
+}
