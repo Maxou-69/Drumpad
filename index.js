@@ -35,6 +35,11 @@ Object.entries(lettre_key).forEach(([key, value]) => {
     body.appendChild(div);
 });
 
-body.onkeydown = function (e) {
+document.addEventListener('keydown', (event) => {
+    let keyCode = event.keyCode;
+    let letterDiv = document.querySelector(`div[data-key='${keyCode}']`);
+    if (letterDiv) {
+        letterDiv.classList.add('active');
 
-}
+    }
+});

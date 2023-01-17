@@ -8,3 +8,7 @@
     padding: 1vh;
     border: 1vh solid #eee;
 }
+
+.active {
+    background-color: red;
+}
