@@ -1,4 +1,5 @@
 let body = document.querySelector('div')
+let audioElement = new Audio("./src/sound_1.mp3")
 let lettre_key = {
     65: "A",
     66: "B",
@@ -40,6 +41,7 @@ document.addEventListener('keydown', (event) => {
     let letterDiv = document.querySelector(`div[data-key='${keyCode}']`);
     if (letterDiv) {
         letterDiv.classList.add('active');
+        audioElement.play()
 
     }
 });
