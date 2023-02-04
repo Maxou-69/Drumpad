@@ -1,6 +1,7 @@
 let body = document.querySelector('div')
 let audioElement = new Audio("./src/sound_1.mp3")
 let lettre_key = {
+    32: "Beatbox",
     65: "A",
     66: "B",
     67: "C",
